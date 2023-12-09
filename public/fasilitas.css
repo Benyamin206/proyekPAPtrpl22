@@ -1,0 +1,51 @@
+.box-container {
+    position: relative;
+    margin-bottom: 150px; /* Menambahkan jarak antara box-container dan container-fasilitas */
+  }
+  .box {
+    background-color: black;
+    color: white;
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+  }
+  .banner {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  .box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .box p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+.container-fasilitas .row {
+max-width: 80%; /* Sesuaikan dengan lebar yang diinginkan */
+margin: 0 auto; /* Agar row berada di tengah halaman */
+}
+.container-fasilitas .row .col-md-6 {
+margin-bottom: 60px; /* Sesuaikan dengan jarak yang diinginkan */
+}
+.container-fasilitas .row .col-md-6 img {
+width: 100%;
+height: 300px; /* Sesuaikan dengan tinggi yang diinginkan */
+object-fit: cover;
+}
+.container-fasilitas .row .col-md-6 h2 {
+  font-family: 'AvenirNextLTPro-Bold'; 
+  color: #013880;
+  font-weight: bold;
+}
+.container-fasilitas .row .col-md-6 h1 {
+  font-family: 'AvenirNextLTPro-Bold'; 
+  color: #013880;
+  font-weight: bold;
+}

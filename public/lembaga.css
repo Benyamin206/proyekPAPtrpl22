@@ -1,0 +1,82 @@
+.box-container {
+    position: relative;
+    margin-bottom: 150px; /* Menambahkan jarak antara box-container dan container-fasilitas */
+  }
+  .box {
+    background-color: black;
+    color: white;
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+  }
+  .banner {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  .box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .box p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.keahlian {
+    text-align: left;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    grid-column: span 1; /* Setiap elemen mengambil satu kolom */
+    display: flex;
+    flex-direction: column; /* Menetapkan tata letak kolom */
+    align-items: center; /* Pusatkan elemen ke tengah */
+  
+}
+
+.keahlian:hover {
+    transform: scale(1.05);
+}
+
+.keahlian img {
+    max-width: 100%;
+    max-height: 200px; /* Atur tinggi maksimum gambar */
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+
+}
+
+.keahlian h3 {
+    font-size: 1.5em;
+    color: #009688; /* Warna judul keahlian */
+}
+
+.keahlian p {
+    color: #666; /* Warna teks paragraf */
+    line-height: 1.5;
+}
+
+/* Menambahkan gaya untuk menampilkan 2 kolom di setiap baris */
+@media(min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+  
+
